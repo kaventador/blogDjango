@@ -1,6 +1,4 @@
 {% load static %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="{% static 'assets/img/favicon.ico'%}">
+    <link rel="icon" href="{% static 'assets/img/favicon.ico' %}">
     <title>Mediumish - A Medium style template by WowThemes.net</title>
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'assets/img/favicon.ico'%}" rel="stylesheet">
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
     <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="{% static 'assets/img/favicon.ico'%}" rel="stylesheet">
+    <link href="{% static 'assets/css/mediumish.css' %}" rel="stylesheet">
 </head>
 <body>
 
@@ -31,7 +29,7 @@
     <div class="container">
         <!-- Begin Logo -->
         <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo.png" alt="logo">
+            <img src="{% static 'assets/img/logo.png' %}" alt="logo">
         </a>
         <!-- End Logo -->
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -59,33 +57,38 @@
     </div>
 </nav>
 <!-- End Nav
-
     Begin Footer
     ================================================== -->
-    <div class="footer">
-        <p class="pull-left">
-            Copyright &copy; 2017 Your Website Name
-        </p>
-        <p class="pull-right">
-            Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
-        </p>
-        <div class="clearfix">
-        </div>
-    </div>
-    <!-- End Footer
-    ================================================== -->
 
+{% block content %}
+	
+{% endblock %}
+
+
+<div class="footer">
+    <p class="pull-left">
+        Copyright &copy; 2017 Your Website Name
+    </p>
+    <p class="pull-right">
+        Mediumish Theme by <a target="_blank" href="https://www.wowthemes.net">WowThemes.net</a>
+    </p>
+    <div class="clearfix">
+    </div>
 </div>
+<!-- End Footer
+================================================== -->
+
+
 <!-- /.container -->
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="{% static 'assets/img/favicon.ico'%}"></script>
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
-<script src="{% static 'assets/img/favicon.ico'%}"></script>
-<script src="{% static 'assets/img/favicon.ico'%}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/ie10-viewport-bug-workaround.js' %}"></script>
 </body>
 </html>
